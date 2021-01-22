@@ -2,7 +2,8 @@
 
 
 
-// kilometerToMeter Convert
+
+// kilometerToMeter Convert  Assignment
 
 function kilometerToMeter(n) {
     var meterCalculate = n * 1000;
@@ -15,7 +16,7 @@ console.log(result);
 
 
 
-// budgetCalculator 
+// budgetCalculator Assignment
 
 function budgetCalculator(watch, mobile, laptop) {
     var watchPrice = watch * 50;
@@ -30,3 +31,37 @@ function budgetCalculator(watch, mobile, laptop) {
 var totalBudget = (budgetCalculator());
 console.log(totalBudget);
 
+
+
+
+// hotelCost Assignment
+
+function hotelCost(n) {
+    var totalCost = 0;
+
+    if( n <= 10) {
+        totalCost = n * 100;
+
+    }
+    else if(n <=20) {
+        var firstTenDayCost = 10 * 100;
+        var remainingDay = n - 10;
+        var secondTenDayCost = remainingDay * 80;
+
+        totalCost = firstTenDayCost + secondTenDayCost;
+
+    }
+    else {
+        var firstTenDayCost = 10 * 100;
+        var secondTenDayCost = 10 * 80;
+        var remainingDay = n - 20;
+        var afterTwentyDayCost = remainingDay * 50;
+
+        totalCost = firstTenDayCost + secondTenDayCost + afterTwentyDayCost;
+    }
+
+    return totalCost;
+}
+
+var hotelBill = (hotelCost());
+console.log (hotelBill);
