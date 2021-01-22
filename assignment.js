@@ -11,3 +11,22 @@ function kilometerToMeter(n) {
 
 var result = (kilometerToMeter());
 console.log(result);
+
+
+
+
+// budgetCalculator 
+
+function budgetCalculator(watch, mobile, laptop) {
+    var watchPrice = watch * 50;
+    var mobilePrice = mobile * 100;
+    var laptopPrice = laptop * 500;
+
+    var totalPrices = watchPrice + mobilePrice + laptopPrice;
+
+    return totalPrices;
+}
+
+var totalBudget = (budgetCalculator());
+console.log(totalBudget);
+
